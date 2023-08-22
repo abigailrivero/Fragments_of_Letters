@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    background-image: url(img/fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 95vh;
+}
+
+img{
+    width: 100vh;
+    height: 50vh;
+}
+
+body::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, .33);
+}
+
+.icono i {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 7px;
+}
+
+.login {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);    
+    height: 425px;
+    background: #000000;
+    color: #fff;
+    width: 700px;
+    border-radius: 45px;
+}
+
+img {
+    width: auto;
+    height: 425px;
+    float: right;
+    border-radius: 0px 45px 45px 0px;
+}
+
+h1 {
+    color: #f8dcff;
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    padding-top: 25px;
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-left: 80px;
+    margin-bottom: 0.5rem;
+}
+
+/*Segundo texto: contraseña*/
+.form-label{
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-left: 124px;
+}
+
+div{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+.enlaces{
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 118px;
+}
+
+/*Enlace 2: ¿no tienes cuenta? Registrate*/
+.r{
+    margin-left: -13px;
+}
+
+.invalid-feedback{
+    margin-left: 63px;
+}
+
+.button{
+    background-color: #68005a;
+    color: #fff;
+    border: 0;
+    border-radius: 100px;
+    width: 105px;
+    height: 40px;
+    transition: .2s;
+    padding: 8px;
+    margin-left: 145px;
+    margin-top: 15px;
+}
+
+.button:active{
+    background-color: #ffffff;
+    color: #68005a;
+    transform: scale(0.8);
+}
+

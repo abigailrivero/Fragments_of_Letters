@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Indicacion de CSS-->
+    <link rel="stylesheet" href="home.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Javascript de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Estilos de fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--Estilos de Bootstrap-->
+    <style>
+    body {
+        margin: 0;
+        font-family: var(--bs-font-sans-serif);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #180a21;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    @media (min-width: 1200px){
+        .h2, h2 {
+            font-size: 83px; 
+        }
+        .h2, h2 {
+            font-size: 83px; 
+        }        
+    }
+    @media (min-width: 1200px){
+        .h3, h3 {
+            font-size: 24px;
+        }        
+    }
+
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        color: #212529;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: #320044; 
+        border: none; 
+        padding: 1.37rem 0.75rem;
+        font-size: 1rem;
+        border-radius: 517px;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .border-top {
+        border-top: 1px solid #bb285c!important;
+    }
+
+    .text-muted {
+        color: #abafb3!important;
+    }
+
+    .bg-light {
+        background-color: transparent!important;
+    }
+
+    .form-control {
+        display: block;
+        width: 521px;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 100px;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .btn-check:focus+.btn-outline-success, .btn-outline-success:focus {
+        box-shadow: 0 0 0 0.25rem rgba(148, 0, 148, 0.452);
+    }
+
+    .btn-outline-success:hover {
+        color: #fff;
+        background-color: #5d0069;
+        border-color: #5d0069;
+    }
+
+    .btn-check:active+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active {
+        color: #fff;
+        background-color: #5d0069;
+        border-color: #5d0069;
+    }
+
+    .btn-check:active+.btn-outline-success:focus, .btn-check:checked+.btn-outline-success:focus, .btn-outline-success.active:focus, .btn-outline-success.dropdown-toggle.show:focus, .btn-outline-success:active:focus {
+        box-shadow: 0 0 0 0.25rem rgba(187, 0, 187, 0.452);
+    }
+
+    .form-control:focus {
+        color: #212529;
+        background-color: #ffffff;
+        border-color: #ffffff;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba(114, 0, 114, 0.452);
+    }
+
+    a:hover {
+        color: #ffffff;
+    }
+
+    .bg-light {
+        background-color: #180a21!important;
+    }
+
+    .portada{
+        width: 50%;
+        position: relative;
+        top: 50%;
+        left: 1vw;
+        height: auto;
+    }
+    </style>
+    <title>Bienvenidos</title>
+</head>
+<body>
+    <!--Primera foto-->
+    <div class="fondo-1">
+        <!--Principiante-->
+        <div>
+            <h2 class="h2">Fragments of Letters</h2>
+        </div>
+        <div class="buttons">
+            <form>
+                <button class="button-one">Iniciar sesion</button>
+            </form>
+            <form>
+                <button class="button-two">Registrarse</button>
+            </form>
+        </div>
+        <!--Encabezado-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 0;">
+            <div class="container-fluid">
+              <div class="logotipo">
+                <img src="img/logo.png" alt=" ">
+                <h3 class="titulo-de-empresa">Fragments of Letters</h3>
+              </div>
+              <!--NO BORRAR-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="bi bi-list"></i></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <div class="menu-dropdown">
+                    <div>
+                        <ul class="dropdown">
+                            <li class="dropdown-list">
+                                <a href="#" class="dropdown-link" style="padding-bottom: 16px;">
+                                    GENEROS<i class="pi bi-chevron-down" style="font-size: 23px;"></i>
+                                    <input type="checkbox" class="dropdown-check">
+                                </a>
+                                <div class="dropdown-contenido">
+                                    <ul class="dropdown-sub">
+                                        <li class="dropdown-li">
+                                            <a href="#" class="dropdown-anchor">ROCK</a>
+                                        </li>
+                                        <li class="dropdown-li">
+                                            <a href="#" class="dropdown-anchor">POP</a>
+                                        </li>
+                                        <li class="dropdown-li">
+                                            <a href="#" class="dropdown-anchor">JAZZ</a>
+                                        </li>
+                                        <li class="dropdown-li">
+                                            <a href="#" class="dropdown-anchor">REGGAETON</a>
+                                        </li>
+                                        <li class="dropdown-li">
+                                            <a href="#" class="dropdown-anchor">METAL</a>
+                                        </li>
+                                        <li class="dropdown-li">
+                                            <a href="#" class="dropdown-anchor">CLASICA</a>
+                                        </li>
+                                        <li class="dropdown-li">
+                                            <a href="#" class="dropdown-anchor">SOUL</a>
+                                        </li>
+                                        <li class="dropdown-li">
+                                            <a href="#" class="dropdown-anchor">HIP HOP</a>
+                                        </li>
+                                        <li class="dropdown-li">
+                                            <a href="#" class="disco">DISCO</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </ul>
+                <form class="d-flex">
+                    <nav class="navbar navbar-light bg-light" style="margin-right: 0px; margin-left: 28px;">
+                        <div class="container-fluid">
+                          <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar comunidades" aria-label="Search" style="width: 40vw;">
+                            <button class="btn btn-outline-success" type="submit" style="height: 53px; width: 53px; padding-top: 12px;"><i class="bi bi-search"></i></button>
+                          </form> 
+                        </div> 
+                    </nav> 
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!--Segunda foto-->
+    <div class="fondo-2">
+        <div class="introduccion">
+            <h3 class="sub-titulo">UNETE A UNA COMUNIDAD</h3>
+            <p class="texto-uno">Unete/crea una comunidad y empiecen a hacer canciones. Te damos la bienvenida a la comunidad de creadores de música apasionados, tanto si ya eres uno como si aspiras a serlo.</p>
+        </div>
+    </div>
+    <!--Tercera foto-->
+    <div class="fondo-3">
+        <img class="portada" src="img/portada.jpeg" alt="">
+        <div class="introduccion-dos">
+            <h3 class="sub-titulo-segundo">ESCOJE TU MUSICA</h3>
+            <p class="texto-dos">Podras leer y escuchar la letra de las demas comunidades. Se libre de escojer tu ritmo favorito</p>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href=" " class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <p style="color: #e0cfff; font-family: 'Lobster Two', cursive; font-size: 25px; margin-bottom: 0px;">Fragments of Letters</p>
+                </a>
+                <p class="text-muted">© 2023</p>
+            </div>
+        
+            <div class="col mb-3">
+        
+            </div>
+        
+            <div class="col mb-3">
+                <h5 class="text-bottom" style="color: #e0cfff;">Log in</h5>
+                <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sign up</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Support</a></li>
+                </ul>
+            </div>
+        
+            <div class="col mb-3">
+                <h5 class="text-bottom" style="color: #e0cfff;">About</h5>
+                <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Press</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Jobs</a></li>
+                </ul>
+            </div>
+        
+            <div class="col mb-3">
+                <h5 class="text-bottom" style="color: #e0cfff">Section</h5>
+                <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <style>
+        /*Menu responsive*/ 
+        @media (max-width: 991px){
+            .menu-dropdown {
+                position: inherit!important;
+            }
+            .bg-light {
+                background-color: #180a21!important;
+            }
+            .mb-2 {
+                margin-bottom: -2rem!important;
+            }
+            i{
+                color: #ffffff;
+            }
+            .ibi{
+                padding-left: 35px!important;
+            }    
+            .h2{
+                font-size: 7vw;
+            }
+            .button-one{
+                padding: 1vw;
+                font-size: 2vw;
+                width: 20.5vw;
+                margin-right: 7vw;
+            }
+            .button-two{
+                padding: 1vw;
+                font-size: 2vw;
+                width: 20.5vw;
+                margin-left: 7vw;
+            }
+            .sub-titulo-segundo{
+                font-size: 4vw; 
+                margin: 5vw 0;
+            }
+            .texto-dos{
+                max-width: 45vw;
+                font-size: 2vw; 
+                margin: 4vw 0;
+            }
+            .sub-titulo{
+                font-size: 4vw; 
+                margin: 5vw 0;
+            }
+            .texto-uno{
+                max-width: 45vw;
+                font-size: 2vw; 
+                margin: 4vw 0;
+            }
+            .portada{
+                display: none;
+            }
+            .nav-link{
+                margin-top: 40px;
+            }
+            .text-bottom{
+                margin-bottom: 0px;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Javascript de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Estilos de fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--Estilos de Bootstrap-->
+    <title>Document</title>
+</head>
+<body>
+<form class="create-community">
+    <!--Instalar imagen-->
+    <div class="drag-file-area" style="margin-bottom: 10px;">
+        <label for="fileInput" style="position: absolute; left: 221px; top: 65px;"><i class="bi bi-image-fill"></i></label>
+        <input type="file" id="fileInput" class="install-img" accept="image/*">
+        <div class="contenedor tamano-1">
+            <img id="previewImage" style="display: none; position: absolute; top: 23px; right: 20px;">            
+        </div>  
+    </div>
+    <!--Nombre, descripcion y genero de la comunidad-->
+    <div>
+        <input class="nombre-de-comunidad" type="name" placeholder="Nombre de la comunidad" required>        
+    </div>
+    <div>
+        <p style="margin-bottom: 2px; margin-top: 2px;">Descripcion:</p>
+        <textarea class="description" style="margin-bottom: 2px;" type="text" placeholder="Menos de 50 palabras" required></textarea>       
+    </div>
+    <div class="eleccion-de-genero">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Genero musical</option>
+            <option value="1">Rock</option>
+            <option value="2">Pop</option>
+            <option value="3">Jazz</option>
+            <option value="4">Reggaeton</option>
+            <option value="5">Metal</option>
+            <option value="6">Clasica</option>
+            <option value="7">Soul</option>
+            <option value="8">Hip hop</option>
+            <option value="9">Disco</option>
+        </select> 
+    </div>
+    <!--Creacion de la comunidad-->
+    <div style="display: flex; margin-top: 15px;">
+        <div style="display: flex; margin-top: 8px;">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" style="margin-left: 5px;">Restriccion de edad</label>            
+        </div>
+        <form>
+            <button class="create">Crear comunidad</button>
+        </form>        
+    </div>
+</form>
+<!--CSS-->
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;        
+    }
+
+    .contenedor{
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    img{
+        border-radius: 25px;
+        object-fit: cover;
+        width: 460px;
+        height: 160px;
+    }
+    
+    .create-community{
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-color: #b388be;
+        border-radius: 25px;
+        padding: 13px 20px 13px 20px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);  
+        color: #ffffff; 
+    }
+
+    .drag-file-area {
+        background-color: #ffffff;
+        border-radius: 25px;
+        margin: 10px 0 15px;
+        padding: 30px 30px;
+        width: 460px;
+        height: 160px;
+        text-align: center;
+    }
+
+    i{
+        font-size: 50px;
+        color: #d6d6d6;
+        cursor: pointer;
+    }
+
+    .install-img{
+        display: none;
+        visibility: none;
+    }
+
+    .nombre-de-comunidad{
+        font-family: 'Roboto', sans-serif;
+        padding: 10px 10px;
+        padding-left: 12px;
+        width: 460px;
+        right: 100px;
+        border: none;
+        border-radius: 5px;
+        transition: .2s;
+    }
+
+    .nombre-de-comunidad:focus{
+        border-color: #86b7fe;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+    }
+
+    .eleccion-de-genero{
+        display: flex;
+    }
+
+    .form-select{
+        font-family: 'Roboto', sans-serif;
+        width: 160px;   
+        padding-left: 12px;
+    }
+
+    .create{
+        font-family: 'Roboto', sans-serif;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #c12ecc;
+        transition: .2s;
+        margin-left: 150px;
+        color: #ffffff;
+    }
+
+    .create:active{
+        transform: scale(0.8);
+    }
+
+    textarea{
+        padding-left: 12px;
+        resize: none;
+        width: 460px;
+        height: 100px;
+        border-radius: 5px;
+        border: none;
+        transition: .2s;
+    }
+
+    textarea:focus{
+        border-color: #86b7fe;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+    }
+
+</style>
+
+<!--Java-->
+<script>
+const fileInput = document.getElementById('fileInput');
+const previewImage = document.getElementById('previewImage');
+
+fileInput.addEventListener('change', function(event) {
+  const file = event.target.files[0];
+
+  if (file && file.type.startsWith('image/')) {
+    const reader = new FileReader();
+
+    reader.onload = function() {
+      const imageUrl = reader.result;
+      previewImage.src = imageUrl;
+      previewImage.style.display = 'block';
+      fileInput.style.display = 'none';
+    }
+
+    reader.readAsDataURL(file);
+  }
+});
+
+</script>
+</body>
+</html>

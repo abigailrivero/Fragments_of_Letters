@@ -1,0 +1,100 @@
+body {
+    background-image: url(img/fondos/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 0px;
+    height: 100px;
+}
+
+.name {
+    transform: translateY(0px) translateX(2px);
+}
+
+
+/* Inicio de: Div class fondo2 */
+
+.fondo2 {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(#000, #34053d);
+    transform: translateY(240px);
+}
+
+.container {
+    width: auto;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.img {
+    width: 130px;
+    height: 130px;
+    transform: translateX(610px) translateY(-210px);
+    border-radius: 100px;
+}
+
+.usuario {
+    transform: translateY(-200px)
+}
+
+.opciones {
+
+    transform: translateY(325px);
+
+}
+
+.escogidos {
+    color: #c500b6;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: arial;
+
+    .COMUNIDADES {
+        transform: translateY(-173px) translateX(90px);
+    }
+
+    /* Hay -108 px de diferencia entre .COMUNIDADES y .GUARDADOS
+Y entre Siguiendo y GUARDADOS hay 53 px de diferencia (Con respecto al eje Y  */
+    .GUARDADOS {
+        transform: translateY(-281px) translateX(1074px);
+    }
+}
+
+.siguiendo {
+    color: #ff00ec
+}
+
+.Siguiendo {
+    transform: translateY(-228px) translateX(600px);
+    font-size: 25px;
+    font-family: arial;
+}
+
+
+.nombre {
+    transform: translateY(120px) translateX(590px);
+    font-family: arial;
+    color: white;
+    font-size: 25px;
+}
+
+.linea {
+    transform: translateY(40px) translateX(-7px);
+    width: 1346px;
+    border: 1px solid #ff00ec;
+}
+
+svg.bi.bi-gear-fill {
+    transform: translateX(1300px) translateY(201px);
+}
+svg.bi.bi-search{
+    transform: translateX(190px) translateY(-70px);
+}
+svg.bi.bi-chevron-left{
+    transform: translateX(5px) translateY(-270px);
+}
